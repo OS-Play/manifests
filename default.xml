@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="https://github.com/OS-Play/" />
+  <remote name="github" fetch="https://github.com/" />
+
+  <default revision="v0.1.0" remote="origin" />
+
+  <project path="meta-apps" name="meta-apps.git" remote="origin" />
+  <project path="meta-bsp" name="meta-bsp.git" remote="origin" />
+  <project path="meta-library" name="meta-library.git" remote="origin" />
+  <project path="meta-playos" name="meta-playos.git" remote="origin">
+    <linkfile src="scripts" dest="scripts" />
+  </project>
+  <project path="meta-retroarch" name="meta-retroarch.git" remote="origin">
+  </project>
+  <project path="meta-services" name="meta-services.git" remote="origin" />
+
+  <project path="bitbake" name="openembedded/bitbake.git" remote="github" revision="master" />
+  <project path="core" name="openembedded/openembedded-core.git" remote="github" revision="kirkstone" />
+  <project path="3rdparty/meta-openembedded" name="openembedded/meta-openembedded.git" remote="github" revision="kirkstone" />
+  <project path="3rdparty/meta-meson" name="superna9999/meta-meson.git" remote="github" revision="kirkstone" />
+  <project path="3rdparty/meta-retro" name="dev-0x7C6/meta-retro.git" remote="github" revision="kirkstone">
+    <linkfile src="." dest="meta-retroarch/meta-retro" />
+  </project>
+
+</manifest>
