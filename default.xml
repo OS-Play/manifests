@@ -5,6 +5,9 @@
 
   <default revision="v0.1.0" remote="origin" />
 
+  <project path="PlayOS" name="PlayOS.git" remote="origin" revision="main">
+    <linkfile src="README.md" dest="README.md" />
+  </project>
   <project path="meta-apps" name="meta-apps.git" remote="origin" />
   <project path="meta-bsp" name="meta-bsp.git" remote="origin" />
   <project path="meta-library" name="meta-library.git" remote="origin" />
